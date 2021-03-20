@@ -1,0 +1,1 @@
+Type assertion works only with interface

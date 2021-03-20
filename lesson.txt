@@ -1,0 +1,63 @@
+byte is used to represent the ASCII character
+rune is used to represent all UNICODE characters which include every character that exists.
+The zero value of a slice is nil
+you can set a slice to be nil in golang.infact to clear an array just set it to be nil
+The zero value of a map is nil
+
+The zero value of a channel is <nil>
+
+
+In short all reference types zero value are nil (pointer,channel,interface,map,slice,function).means a value as not been assigned to it 
+
+
+
+SELECT
+------
+The select statement is used to choose from multiple send/receive channel operations
+The select statement blocks until one of the send/receive operation is ready
+
+Practical use of a select is when you call multiple service to get data.the fastest one is been used
+
+Select Snippet
+--------------
+https://play.golang.org/p/aJFZxCuTpNE 
+https://play.golang.org/p/ZP1zhWIME5K - Default case example
+https://play.golang.org/p/TpYK9GEUQYJ - no write to the channel with no Default case
+https://play.golang.org/p/8GN87oZLW7y - no write to the channel with Default case
+https://play.golang.org/p/YkYZZldpXSN - nil channel with Default case
+https://play.golang.org/p/3mTxFVMtRt3 - empty select statement
+
+
+MUTEX
+-----
+ 
+
+
+
+SWITCH
+------
+There are two types of Switch types in Go Programming language.
+
+(1) Expression Switch - In this case, Switch expression are compared with case expressions.
+(2) Type Switch -Switch expressions types are compared with case expressions.
+
+
+
+switch (variable|boolean-expression|Integer type){  
+case boolean-expression | integer type  
+     Block of code contains statements  
+case boolean-expression | integer type  
+     Block of code contains statements  
+default: // default  case and it is optional  
+   Block of code contains statements  
+}
+
+
+
+
+Learn default value of type in golang
+
+
+REFERENCE TYPES VS VALUE TYPES
+------------------------------
+you cannot compare reference types of the same type, you can compare value types of the same types
